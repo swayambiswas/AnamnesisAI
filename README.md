@@ -10,3 +10,12 @@ PROJECT RULES
 8. Every memory-backed answer must have provenance.
 9. User memory must always be user-scoped.
 10. No "works on my laptop" commits.
+
+
+Branch Structure should become:
+main
+│
+├── feature/memory-engine
+├── feature/agent-rag
+├── feature/backend-db
+└── feature/frontend
