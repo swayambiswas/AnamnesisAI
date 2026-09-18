@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { AgentResponse, MemoryRecord } from '@/lib/api/types';
 import { Chat } from '@/components/chat/Chat';
 import { MemoryCard } from '@/components/memory/MemoryCard';
@@ -6,7 +6,7 @@ import { ProvenancePanel } from '@/components/provenance/ProvenancePanel';
 import { ConflictView } from '@/components/conflict/ConflictView';
 import { Timeline } from '@/components/timeline/Timeline';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UserCircle, Shield, ArrowLeft } from 'lucide-react';
+import { Shield, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Assistant() {
@@ -136,3 +136,4 @@ export default function Assistant() {
     </div>
   );
 }
+

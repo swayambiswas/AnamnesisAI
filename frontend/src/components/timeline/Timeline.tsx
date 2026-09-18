@@ -43,3 +43,4 @@ export const Timeline: React.FC<TimelineProps> = ({ memories }) => {
     </div>
   );
 };
+

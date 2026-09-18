@@ -39,3 +39,4 @@ export const ConflictView: React.FC<ConflictViewProps> = ({ memories }) => {
     </div>
   );
 };
+

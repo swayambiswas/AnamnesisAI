@@ -174,3 +174,4 @@ export async function getTimeline(userId: string): Promise<MemoryRecord[]> {
   if (userId !== 'user_1') return [];
   return MOCK_MEMORIES.filter(m => m.id.startsWith('mem_0'));
 }
+

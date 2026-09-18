@@ -31,3 +31,4 @@ export interface AgentResponse {
   conflict_detected: boolean;
   memories?: MemoryRecord[]; // Appended by mock for easy UI rendering
 }
+

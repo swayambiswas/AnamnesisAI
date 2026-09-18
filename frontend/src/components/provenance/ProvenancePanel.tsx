@@ -61,3 +61,4 @@ export const ProvenancePanel: React.FC<ProvenancePanelProps> = ({ response }) =>
     </div>
   );
 };
+

@@ -79,3 +79,4 @@ export const MemoryCard: React.FC<MemoryCardProps> = ({ memory, className, onCli
     </motion.div>
   );
 };
+

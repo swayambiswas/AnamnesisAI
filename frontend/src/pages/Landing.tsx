@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Brain, Clock, ShieldAlert, GitMerge, FileQuestion } from 'lucide-react';
+import { ArrowRight, Clock, ShieldAlert, GitMerge, FileQuestion } from 'lucide-react';
 
 export default function Landing() {
   // Simple scroll to top on mount
@@ -209,3 +209,4 @@ export default function Landing() {
     </div>
   );
 }
+

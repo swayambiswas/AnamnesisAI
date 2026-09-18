@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { AgentResponse, sendMessage } from '@/lib/api/mock';
+import { AgentResponse } from '@/lib/api/types';
+import { sendMessage } from '@/lib/api/mock';
 import { Send, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
@@ -98,3 +99,4 @@ export const Chat: React.FC<ChatProps> = ({ userId, onResponse }) => {
     </div>
   );
 };
+
