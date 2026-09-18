@@ -37,3 +37,9 @@ class MemoryRepository(ABC):
     @abstractmethod
     def get_all(self, user_id: str) -> List[MemoryRecord]:
         """Retrieve all memories belonging to *user_id*."""
+
+    @abstractmethod
+    def search(
+        self, user_id: str, query_embedding: List[float], limit: int = 10
+    ) -> List[MemoryRecord]:
+        """Retrieve candidates semantically similar to *query_embedding*."""

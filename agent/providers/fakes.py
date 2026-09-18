@@ -63,3 +63,9 @@ class FakeMemoryRepository(MemoryRepository):
             m for m in self.memories.values()
             if m.user_id == user_id
         ]
+
+    def search(
+        self, user_id: str, query_embedding: List[float], limit: int = 10
+    ) -> List[MemoryRecord]:
+        user_memories = self.get_all(user_id)
+        return user_memories[:limit]

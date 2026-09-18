@@ -11,7 +11,8 @@ class DeterministicQueryPlanner:
 
     # Patterns are checked in priority order (first match wins).
     _TIMELINE_PATTERN = re.compile(
-        r"\b(changed|over time|history of|timeline|show me the history)\b",
+        r"\b(change(?:d)?|over time|history of|timeline|"
+        r"show me the history)\b",
         re.IGNORECASE,
     )
     _HISTORICAL_PATTERN = re.compile(

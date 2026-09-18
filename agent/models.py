@@ -58,10 +58,11 @@ class QueryPlan(BaseModel):
 
 
 class RankingConfig(BaseModel):
-    semantic_weight: float = 0.4
-    confidence_weight: float = 0.2
-    temporal_weight: float = 0.2
-    recency_weight: float = 0.2
+    semantic_weight: float = 0.7
+    confidence_weight: float = 0.1
+    temporal_weight: float = 0.1
+    recency_weight: float = 0.1
+    relevance_threshold: float = 0.45
 
 
 class RetrievalResult(BaseModel):
@@ -70,6 +71,15 @@ class RetrievalResult(BaseModel):
     relevance_explanation: Optional[str] = None
 
 
+class Provenance(BaseModel):
+    memory_id: str
+    reason: List[str]
+    confidence: float
+    status: str
+
+
 class AgentResponse(BaseModel):
-    content: str
-    provenance_ids: List[str] = Field(default_factory=list)
+    answer: str
+    sources: List[Provenance] = Field(default_factory=list)
+    uncertainty: bool = False
+    conflict_detected: bool = False
